@@ -7,15 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B2E77BB2A6E5A9F00F58AF3 /* LEDBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2E77BA2A6E5A9F00F58AF3 /* LEDBoardViewController.swift */; };
+		8B40FE062A6D3E3700746261 /* BaminUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B40FE052A6D3E3700746261 /* BaminUIViewController.swift */; };
+		8B6159CC2A6A4AF700E3765D /* WordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6159CB2A6A4AF700E3765D /* WordViewController.swift */; };
+		8B6159CF2A6A6B9700E3765D /* AssignNewlyCoinedWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6159CE2A6A6B9700E3765D /* AssignNewlyCoinedWordViewController.swift */; };
 		8B6969A82A68DAB200BF6B11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6969A72A68DAB200BF6B11 /* AppDelegate.swift */; };
 		8B6969AA2A68DAB200BF6B11 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6969A92A68DAB200BF6B11 /* SceneDelegate.swift */; };
 		8B6969AC2A68DAB200BF6B11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6969AB2A68DAB200BF6B11 /* ViewController.swift */; };
 		8B6969AF2A68DAB200BF6B11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B6969AD2A68DAB200BF6B11 /* Main.storyboard */; };
 		8B6969B12A68DAB300BF6B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B6969B02A68DAB300BF6B11 /* Assets.xcassets */; };
 		8B6969B42A68DAB300BF6B11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B6969B22A68DAB300BF6B11 /* LaunchScreen.storyboard */; };
+		8B6969BC2A68DBE100BF6B11 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6969BB2A68DBE100BF6B11 /* DatePickerViewController.swift */; };
+		8B6969BE2A69618F00BF6B11 /* AssignDatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6969BD2A69618F00BF6B11 /* AssignDatePickerViewController.swift */; };
+		8B93CF932A6A0D3100CF7A47 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B93CF922A6A0D3100CF7A47 /* SampleViewController.swift */; };
+		8B93CF972A6A102600CF7A47 /* AutolayoutPractice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B93CF962A6A102600CF7A47 /* AutolayoutPractice.storyboard */; };
+		8B93CF9B2A6A122500CF7A47 /* AutolayoutExample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B93CF9A2A6A122500CF7A47 /* AutolayoutExample.storyboard */; };
+		8B93CF9D2A6A150700CF7A47 /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B93CF9C2A6A150700CF7A47 /* Test.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B2E77BA2A6E5A9F00F58AF3 /* LEDBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDBoardViewController.swift; sourceTree = "<group>"; };
+		8B40FE052A6D3E3700746261 /* BaminUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaminUIViewController.swift; sourceTree = "<group>"; };
+		8B6159CB2A6A4AF700E3765D /* WordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewController.swift; sourceTree = SOURCE_ROOT; };
+		8B6159CE2A6A6B9700E3765D /* AssignNewlyCoinedWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignNewlyCoinedWordViewController.swift; sourceTree = "<group>"; };
 		8B6969A42A68DAB200BF6B11 /* NewlyCoinedWord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewlyCoinedWord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B6969A72A68DAB200BF6B11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B6969A92A68DAB200BF6B11 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +38,12 @@
 		8B6969B02A68DAB300BF6B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B6969B32A68DAB300BF6B11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B6969B52A68DAB300BF6B11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B6969BB2A68DBE100BF6B11 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		8B6969BD2A69618F00BF6B11 /* AssignDatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignDatePickerViewController.swift; sourceTree = "<group>"; };
+		8B93CF922A6A0D3100CF7A47 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
+		8B93CF962A6A102600CF7A47 /* AutolayoutPractice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AutolayoutPractice.storyboard; sourceTree = "<group>"; };
+		8B93CF9A2A6A122500CF7A47 /* AutolayoutExample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AutolayoutExample.storyboard; sourceTree = "<group>"; };
+		8B93CF9C2A6A150700CF7A47 /* Test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B2E77BC2A6E5AAD00F58AF3 /* LEDBoardAssignment */ = {
+			isa = PBXGroup;
+			children = (
+				8B2E77BA2A6E5A9F00F58AF3 /* LEDBoardViewController.swift */,
+			);
+			path = LEDBoardAssignment;
+			sourceTree = "<group>";
+		};
 		8B69699B2A68DAB200BF6B11 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +84,33 @@
 		8B6969A62A68DAB200BF6B11 /* NewlyCoinedWord */ = {
 			isa = PBXGroup;
 			children = (
+				8B2E77BC2A6E5AAD00F58AF3 /* LEDBoardAssignment */,
+				8B93CF912A6A0C0700CF7A47 /* New Group */,
 				8B6969A72A68DAB200BF6B11 /* AppDelegate.swift */,
 				8B6969A92A68DAB200BF6B11 /* SceneDelegate.swift */,
 				8B6969AB2A68DAB200BF6B11 /* ViewController.swift */,
 				8B6969AD2A68DAB200BF6B11 /* Main.storyboard */,
+				8B6969BD2A69618F00BF6B11 /* AssignDatePickerViewController.swift */,
+				8B6969BB2A68DBE100BF6B11 /* DatePickerViewController.swift */,
 				8B6969B02A68DAB300BF6B11 /* Assets.xcassets */,
 				8B6969B22A68DAB300BF6B11 /* LaunchScreen.storyboard */,
 				8B6969B52A68DAB300BF6B11 /* Info.plist */,
 			);
 			path = NewlyCoinedWord;
+			sourceTree = "<group>";
+		};
+		8B93CF912A6A0C0700CF7A47 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				8B6159CE2A6A6B9700E3765D /* AssignNewlyCoinedWordViewController.swift */,
+				8B6159CB2A6A4AF700E3765D /* WordViewController.swift */,
+				8B93CF962A6A102600CF7A47 /* AutolayoutPractice.storyboard */,
+				8B93CF922A6A0D3100CF7A47 /* SampleViewController.swift */,
+				8B93CF9A2A6A122500CF7A47 /* AutolayoutExample.storyboard */,
+				8B40FE052A6D3E3700746261 /* BaminUIViewController.swift */,
+				8B93CF9C2A6A150700CF7A47 /* Test.storyboard */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +171,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B93CF9D2A6A150700CF7A47 /* Test.storyboard in Resources */,
 				8B6969B42A68DAB300BF6B11 /* LaunchScreen.storyboard in Resources */,
 				8B6969B12A68DAB300BF6B11 /* Assets.xcassets in Resources */,
+				8B93CF972A6A102600CF7A47 /* AutolayoutPractice.storyboard in Resources */,
+				8B93CF9B2A6A122500CF7A47 /* AutolayoutExample.storyboard in Resources */,
 				8B6969AF2A68DAB200BF6B11 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B6969BE2A69618F00BF6B11 /* AssignDatePickerViewController.swift in Sources */,
+				8B2E77BB2A6E5A9F00F58AF3 /* LEDBoardViewController.swift in Sources */,
+				8B6969BC2A68DBE100BF6B11 /* DatePickerViewController.swift in Sources */,
+				8B6159CC2A6A4AF700E3765D /* WordViewController.swift in Sources */,
+				8B93CF932A6A0D3100CF7A47 /* SampleViewController.swift in Sources */,
+				8B40FE062A6D3E3700746261 /* BaminUIViewController.swift in Sources */,
 				8B6969AC2A68DAB200BF6B11 /* ViewController.swift in Sources */,
+				8B6159CF2A6A6B9700E3765D /* AssignNewlyCoinedWordViewController.swift in Sources */,
 				8B6969A82A68DAB200BF6B11 /* AppDelegate.swift in Sources */,
 				8B6969AA2A68DAB200BF6B11 /* SceneDelegate.swift in Sources */,
 			);
@@ -287,6 +343,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZB66AY8DJC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NewlyCoinedWord/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -294,6 +351,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,6 +372,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZB66AY8DJC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NewlyCoinedWord/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -321,6 +380,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
