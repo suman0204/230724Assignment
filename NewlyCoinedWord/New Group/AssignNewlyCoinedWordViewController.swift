@@ -17,6 +17,8 @@ class AssignNewlyCoinedWordViewController: UIViewController {
     
     @IBOutlet var wordMeaningLabel: UILabel!
     
+    @IBOutlet var wordUpdateButton: UIButton!
+    
     let newlyCoinedWords: [String : String] = ["별다줄": "별거 다 줄인다", "JMT": "존맛탱(존X 맛있다)", "스불재": "스스로 불러온 재앙", "억까": "억지로 까다", "억텐": "억지 텐션", "점메추": "점심메뉴 추천", "카공": "카페에서 공부"]
 
     override func viewDidLoad() {
@@ -27,6 +29,7 @@ class AssignNewlyCoinedWordViewController: UIViewController {
         designWordButton()
         designwordMeaningLabel()
         designSearchButton()
+//        designUpdateButton()
         
         insertWordButton()
         
@@ -64,6 +67,14 @@ class AssignNewlyCoinedWordViewController: UIViewController {
         
     }
     
+//    func designUpdateButton() {
+//        wordUpdateButton.setTitle("단어 바꾸기", for: .normal)
+//        wordUpdateButton.layer.cornerRadius = 10
+//        wordUpdateButton.layer.borderColor = UIColor.black.cgColor
+//        wordUpdateButton.layer.borderWidth = 2
+//        wordUpdateButton.backgroundColor = .black
+//        wordUpdateButton.setTitleColor(.white, for: .normal)
+//    }
     
     func insertWordButton() {
         for (index, word) in newlyCoinedWords.enumerated() {
@@ -71,9 +82,10 @@ class AssignNewlyCoinedWordViewController: UIViewController {
                 let button = wordButtonCollection[index]
                 let wordTitle = word.0
                 button.setTitle(wordTitle, for: .normal)
-               
+
             }
         }
+
     }
     
     //코드 한 줄씩 뜯어보기...
@@ -96,21 +108,66 @@ class AssignNewlyCoinedWordViewController: UIViewController {
         wordTextField.rightViewMode = .always
     }
     
+    func showAlert() {
+        let alert = UIAlertController(title: "두 글자 이상 입력해주세요", message: "", preferredStyle: .alert)
+        
+        let cancel = UIAlertAction(title: "취소", style: .cancel)
+        let ok = UIAlertAction(title: "확인", style: .default)
+        
+        alert.addAction(cancel)
+        alert.addAction(ok)
+        
+        present(alert, animated: true)
+    }
     @IBAction func wordButtonTapped(_ sender: UIButton) {
         wordTextField.text = sender.currentTitle
         wordMeaningLabel.text = newlyCoinedWords[wordTextField.text!.uppercased()]
     }
     
     @IBAction func textFieldKeyboardExit(_ sender: UITextField) {
-        if newlyCoinedWords.keys.contains(wordTextField.text!.uppercased()) {
-            wordMeaningLabel.text = newlyCoinedWords[wordTextField.text!.uppercased()]
+        guard let wordTextFieldText = wordTextField.text  else {
+            showAlert()
+            
+            return
+        }
+        
+        if wordTextFieldText.count < 2 {
+            showAlert()
         } else {
-            wordMeaningLabel.text = "해당 단어는 정보가 없습니다"
+            if newlyCoinedWords.keys.contains(wordTextFieldText.uppercased()) {
+                wordMeaningLabel.text = newlyCoinedWords[wordTextFieldText.uppercased()]
+            } else {
+                wordMeaningLabel.text = "해당 단어는 정보가 없습니다"
+            }
         }
     }
     
     @IBAction func tapGestureTapped(_ sender: UITapGestureRecognizer) {
         view.endEditing(true)
     }
+    
+//    @IBAction func updateButtonTapped(_ sender: UIButton) {
+//        switch sender.tag {
+//        case 0:
+//            if let setTitle = newlyCoinedWords["스불재"] {
+//                wordButtonCollection[sender.tag].setTitle(setTitle, for: .normal)
+//
+//            }
+//        case 1:
+//            if let setTitle = newlyCoinedWords["별다줄"] {
+//                wordButtonCollection[sender.tag].setTitle(setTitle, for: .normal)
+//            }
+//        case 2:
+//            if let setTitle = newlyCoinedWords["억까"] {
+//                wordButtonCollection[sender.tag].setTitle(setTitle, for: .normal)
+//            }
+//        case 3:
+//            if let setTitle = newlyCoinedWords["카공"] {
+//                wordButtonCollection[sender.tag].setTitle(setTitle, for: .normal)
+//            }
+//        default:
+//            print("확인 요망")
+//        }
+//    }
     
 }
