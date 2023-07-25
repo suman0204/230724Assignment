@@ -21,6 +21,13 @@ class AssignNewlyCoinedWordViewController: UIViewController {
     
     let newlyCoinedWords: [String : String] = ["별다줄": "별거 다 줄인다", "JMT": "존맛탱(존X 맛있다)", "스불재": "스스로 불러온 재앙", "억까": "억지로 까다", "억텐": "억지 텐션", "점메추": "점심메뉴 추천", "카공": "카페에서 공부"]
 
+    enum NewlyCoindWords: String, CaseIterable {
+        case 별다줄 = "별거 다 줄인다"
+        case JMT = "존맛탱"
+        case 스불재 = "스스로 불러온 재앙"
+        case 억까 = "억지로 까다"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -84,6 +91,12 @@ class AssignNewlyCoinedWordViewController: UIViewController {
                 button.setTitle(wordTitle, for: .normal)
 
             }
+        }
+        // enum 활용
+        for index in 0...3 {
+            let newlyCoinedWords = NewlyCoindWords.allCases
+            
+            wordButtonCollection[index].setTitle(String(describing: newlyCoinedWords[index]), for: .normal)
         }
 
     }
